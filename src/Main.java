@@ -11,6 +11,10 @@ public class Main {
 
         double[] coefficients = getCoefficients(degree);
 
+        for (int i = 0; i < coefficients.length; i++){
+            System.out.printf("%.1fx^%.0f +",coefficients[i],(coefficients.length - 1 - i));
+        }
+
         System.out.println("Podaj wartości początku i końca przedziału");
         double start = scanner.nextDouble();
         double end = scanner.nextDouble();
